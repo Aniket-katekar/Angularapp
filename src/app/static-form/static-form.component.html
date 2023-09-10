@@ -1,0 +1,58 @@
+<body>
+  <div class="container">
+    <div class="row mt-lg-5 mt-3">
+      <h1 class="fw-bold text-center">Static Form</h1>
+    </div>
+    <div class="row justify-content-center form1">
+      <div class="col-lg-3 border-0 rounded p-4 form-1">
+        <form action="" #firstForm="ngForm">
+          <div class="title">
+            <h2 class="text-white fw-bold">Login</h2>
+          </div>
+          <div class="form-group">
+            <label for="" class="form-label mb-3 text-white fw-bold">Username</label>
+            <input type="text" class="form-control" name="username" ngModel autofocus>
+          </div>
+          <div class="form-group">
+            <label for="" class="form-label mb-3 text-white fw-bold">Password</label>
+            <input type="password" class="form-control" name="password" ngModel>
+          </div>
+          <div class="btns1">
+            <button class="btn btn-success btn1" (click)="showData(firstForm)">SUBMIT</button>
+            <button class="btn btn-danger  btn1" (click)="resetData(firstForm)">RESET</button>
+            <button class="btn btn-primary btn1" (click)="updateData(firstForm)">UPDATE</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-3 border-0 rounded p-4">
+        <form action="#" #secondForm="ngForm">
+          <div class="title">
+            <h2 class="text-white fw-bold">Register</h2>
+          </div>
+          <div class="my-4">
+            <input type="text" name="firstname" id="" class="form-control" placeholder="Firstname" ngModel autofocus #firstname="ngModel">
+            <small class="text-danger" *ngIf="firstname.touched">Enter valid firstname</small>
+          </div>
+          <div class="my-4">
+            <input type="text" name="lastname" id="" class="form-control" placeholder="Lastname" ngModel>
+          </div>
+          <div class="my-4">
+            <input type="email" name="email" id="email" class="form-control" placeholder="Email" ngModel email required #mail="ngModel">
+            <small class="text-danger" *ngIf="mail.invalid && mail.touched">Enter your valid email</small>
+          </div>
+          <div class="my-4">
+            <input type="password" name="password" id="" class="form-control" placeholder="password" ngModel>
+          </div>
+          <div class="my-4">
+            <input type="date" name="dob" id="" class="form-control" ngModel>
+          </div>
+          <div class="btns mt-4 d-flex justify-content-center">
+            <button type="submit" class="btn2 btn btn-primary mx-2 fw-bold" (click)="showData(secondForm)">SUBMIT</button>
+            <button class="btn2 btn btn-success mx-2 fw-bold" (click)="resetData(secondForm)">RESET</button>
+            <button class="btn2 btn btn-danger mx-2 fw-bold" (click)="updateFormData(secondForm)">UPDATE</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>

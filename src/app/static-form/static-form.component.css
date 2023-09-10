@@ -1,0 +1,52 @@
+.col-lg-3{
+  background-color: rgba(0, 0, 0, 0.902);
+  box-shadow: 0px 0px 3px black;
+}
+label{
+  font-size: 20px;
+}
+.title{
+  text-align: center;
+}
+.form1{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#email.ng-invalid.ng-touched{
+  border: 2px solid red;
+}
+.btn2{
+  width: 100px;
+}
+.btns1{
+  margin-top: 33px;
+  display: flex;
+  flex-direction: column;
+}
+.btn1{
+  margin-bottom: 15px;
+}
+.form-group{
+  margin: 15px 0px;
+}
+.btns{
+  margin: 15px 0px;
+}
+h1{
+  text-shadow: 1px 1px 2px black;
+}
+.form-1{
+  margin-right:0px;
+}
+@media screen and (max-width:900px){
+  .form-1{
+    margin:20px 0px;
+  }
+}
+@media screen and (min-width:900px){
+  .form-1{
+    margin-right: 120px;
+  }
+}

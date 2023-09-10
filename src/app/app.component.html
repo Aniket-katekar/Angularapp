@@ -1,0 +1,102 @@
+<!-- <app-header></app-header> -->
+
+<!-- <img [src]="img" alt="" class="shadow">
+<div [style.color]="'red'">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Consequatur suscipit mollitia accusantium qui, consectetur
+    consequuntur vitae. Quasi consectetur animi voluptatibus!
+  </p>
+</div>
+<table border="1">
+  <tr>
+    <th [attr.colspan]="colSpan">Employee Data</th>
+  </tr>
+  <tr>
+    <th>Sr.No</th>
+    <th>Name</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Aniket</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Sanket</td>
+  </tr>
+</table>
+<button (click)="displayName()">Click me</button>
+<input type="text" name="fname" [(ngModel)]="fname">
+{{fname}} -->
+<!--
+<h2 *ngIf="mark>35">pass</h2> -->
+
+<!-- <table border="1">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Age</th>
+      <th>Designation</th>
+      <th>Address</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let e of employee">
+      <td>{{e.fname}}</td>
+      <td>{{e.lname}}</td>
+      <td>{{e.age}}</td>
+      <td>{{e.post}}</td>
+      <td>{{e.address}}</td>
+      <td>{{e.email}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div [ngSwitch]="choose">
+  <ul>
+    <li *ngSwitchCase="'A'">Apple</li>
+    <li *ngSwitchCase="'B'">Ball</li>
+    <li *ngSwitchCase="'C'">Cat</li>
+    <li *ngSwitchCase="'D'">Dog</li>
+    <li *ngSwitchDefault>Invalid input</li>
+  </ul>
+</div>
+
+<h1 [ngClass]="'one'">Hello world</h1>
+<p [ngStyle]="{'color':'Green','font-weight':'bold'}">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  Labore ea nisi eius! Quasi optio debitis laborum ea. Libero, expedita soluta.
+</p>
+
+<label for="" class="fw-bold mx-3">Enter Your Marks</label>
+<input type="number" name="" id="" name="mark" [(ngModel)]="mark">
+<h1 *ngIf="mark>=35 else fail" [ngStyle]="{'color':'green'}">You are passed!</h1>
+<ng-template #fail>
+  <h1 *ngIf="mark>=0 else empty" [ngStyle]="{'color':'red'}">You are Failed!</h1>
+</ng-template>
+<ng-template #empty>
+  <h1>You have not entered your marks</h1>
+</ng-template>
+
+<label for="">{{lastname}}</label><br>
+<label for="">{{lastname | uppercase}}</label><br>
+<label for="">{{lastname | lowercase}}</label><br>
+<label for="">{{lastname | slice:2:4}}</label><br>
+<label for="">{{amount | currency:"EUR"}}</label><br>
+<label for="">{{mark | percent}}</label><br>
+<label for="">{{amount | number}}</label><br>
+<label for="" (click)="displayDate()">Get Date</label> -->
+<!--
+<app-login></app-login>
+
+<app-footer></app-footer> -->
+<!--
+<a href="login">login</a> |
+<a href="header">header</a> |
+<a href="footer">footer</a> -->
+<!-- <app-footer></app-footer> -->
+
+<app-static-form></app-static-form>
+<app-reactive-form></app-reactive-form>
+<router-outlet></router-outlet>
